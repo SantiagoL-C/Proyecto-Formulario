@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario Admision</title>
+  </head>
+<body>
+  <h1>Formulario Admision NodoEafit</h1>
+    <p>Responder el siguiente formulario, las casillas obligatorias estaran marcadas con un "*":</p>
+
+    <form method="post" action="enviado.html">
+      <fieldset>
+        <legend>INFORMACION PERSONAL</legend>
+          <label for="primer-nombre">Primer Nombre*:</label>
+          <input type="text" id="primer-nombre" name="primer-nombre" placeholder="Ej:Pepito" required>
+            <label for="segundo-nombre">Segundo Nombre:</label>
+            <input type="text" id="segundo-nombre" name="segundo-nombre" placeholder="Si Aplica"><br><br>
+          <label for="apellidos">Apellidos*:</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Ej:Perez" required>
+            <label for="seleccion-genero">Genero:</label>
+          <input type="checkbox" id="masculino" name="male">
+          <label for="masculino">Masculino</label> |
+            <input type="checkbox" id="femenino" name="female">
+            <label for="femenino">Femenino</label> |
+          <input type="checkbox" id="no-binario" name="no-binare">
+          <label for="no-binario">No Binario</label><br><br>  
+            <label for="correo">Correo Electronico*:</label>  
+            <input type="email" id="correo" name="correo" placeholder="Ejemplo@gmail.com" required>
+          <label for="telefono">Telefono ó Numero Celular*:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+57 37311784" required>
+            <label for="direccion">Direccion*:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Cll 30#50 10" required ><br><br>
+          <label for="departamento">Departamento:</label>
+            <select name="departamentos" id="opciones-dep">
+              <option>--Seleccion una opción--</option>
+              <option value="dep1">Antioquia</option>
+              <option value="dep2">Amazonas</option>
+              <option value="dep3">Caldas</option>
+              <option value="dep4">Bogota</option>
+              <option value="dep5">Risaralda</option>
+            </select>
+              <label for="pais">Pais de Residencia:</labe>
+                <select name="paises" id="opciones-pais">
+                  <option>--Seleccion una opción--</option>
+                  <option value="pais1">Colombia</option>
+                  <option value="pais2">Estados Unidos</option>
+                  <option value="pais3">Argentina</option>
+                  <option value="pais4">Brazil</option>
+                  <option value="pais5">España</option>
+                </select><br><br>
+            <label for="descripcion">Descripcion acerca de ti*:</label><br>
+        <textarea cols="100" maxlength="300" placeholder="Ej:Me llamo Pepito Perez, Soy Desarrollador Web,Me gusta los VideoJuegos..." required></textarea><br><br>
+              
+          <legend>DATOS DE INTERES:</legend><br>
+                <label for="elegir-programa">Que Carreras Deseas Inscribirte?:</label>
+                  <select name="cursos" id="opciones-cursos">
+                    <option>--Seleccion una opción--</option>
+                    <option value="curso1">JOBS TO BE DONE</option>
+                    <option value="curso2">CLOUD NATIVE</option>
+                    <option value="curso3">FRONTEND</option>
+                    <option value="curso4">BACKEND</option>
+                    <option value="curso5">FUNDAMENTALS</option>
+                    <option value="curso6">PYTHON</option>
+                    <option value="curso6">MARKETING DIGITAL</option><br>
+                  </select>
+                      <a href="https://es.nodoeafit.com/cursos-nodo/" target="_blank"><p>Este enlace te llevara a conocer mas opciones que se adapten a tus gustos!!</p></a>
+                    <label for="modalidad">Que Modalidad te gustaria?:
+                      <select name="modalidades"> 
+                        <option>--Seleccion una opción--</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                      </select>
+                    </label>|
+                <label for="trabajo-actual">Actualmente te encuentras trabajando?:</label>
+                    <label for="resp1">SI</label>
+                    <input type="checkbox" name="resp1" id="resp1">
+                    <label for="resp2">NO</label>
+                    <input type="checkbox" name="resp2" id="resp2"><br><br>
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Reiniciar Formulario</button>
+      </fieldset><br><br>     
+     </form>
+  </body>
+
+</html>
